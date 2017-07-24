@@ -1,5 +1,7 @@
 package com.spr.learn;
 
+import static org.junit.Assert.*;
+
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,6 +18,7 @@ public class InjectionBySetter {
 	
 	@Test
 	public void testDI(){
+		assertEquals("Hello World",diService.sayHello());
 		System.out.println(diService.sayHello());
 	}
 
